@@ -1,0 +1,22 @@
+{
+  "name": "iOSUI",
+  "version": "0.1.0",
+  "summary": "A short description of iOSUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/diazavilasebastian@gmail.com/iOSUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "diazavilasebastian@gmail.com": "diazavilasebastian@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/diazavilasebastian@gmail.com/iOSUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSUI/Classes/**/*"
+}
