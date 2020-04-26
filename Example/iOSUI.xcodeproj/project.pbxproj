@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416A949A2453CA9800B94C08 /* LabelStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416A94992453CA9800B94C08 /* LabelStackViewTests.swift */; };
+		416A949C2453CD8A00B94C08 /* ReferenceImages in Resources */ = {isa = PBXBuildFile; fileRef = 416A949B2453CD8A00B94C08 /* ReferenceImages */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B74AEDC8BE7104C4EA177A31 /* Pods_iOSUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D0BBD448E8E1C75CACD219 /* Pods_iOSUI_Tests.framework */; };
 		E1F037FCB6B899EBE2B266E3 /* Pods_iOSUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BD3C56714A5240DA98EF98 /* Pods_iOSUI_Example.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,8 @@
 		07D0BBD448E8E1C75CACD219 /* Pods_iOSUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BD3C56714A5240DA98EF98 /* Pods_iOSUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		343757D1090ECE542DED3764 /* Pods-iOSUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-iOSUI_Tests/Pods-iOSUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		416A94992453CA9800B94C08 /* LabelStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStackViewTests.swift; sourceTree = "<group>"; };
+		416A949B2453CD8A00B94C08 /* ReferenceImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReferenceImages; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* iOSUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* iOSUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61DEE12AC42ABC330AD3305E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		638E6B9BA46B9730F46AC62C /* Pods-iOSUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-iOSUI_Example/Pods-iOSUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6CA0F5FB4430999E97F0FA22 /* Pods-iOSUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUI_Example.release.xcconfig"; path = "Target Support Files/Pods-iOSUI_Example/Pods-iOSUI_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,8 +128,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				416A949B2453CD8A00B94C08 /* ReferenceImages */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				416A94992453CA9800B94C08 /* LabelStackViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				C20E6E99B7B5D0962312A773 /* [CP] Embed Pods Frameworks */,
+				830F83FD8D65383D73F6F7DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416A949C2453CD8A00B94C08 /* ReferenceImages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,24 +296,24 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSUI_Tests/Pods-iOSUI_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSUI_Tests/Pods-iOSUI_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C20E6E99B7B5D0962312A773 /* [CP] Embed Pods Frameworks */ = {
+		830F83FD8D65383D73F6F7DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				416A949A2453CA9800B94C08 /* LabelStackViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -490,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
