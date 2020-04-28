@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSUI'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Custom elements UI used in my project'
 
 # This description is used to generate tags and improve search results.
@@ -19,16 +19,18 @@ Pod::Spec.new do |s|
 
   s.description      = "Custom elements UI used in my project test where test architectures"
 
-  s.homepage         = 'https://github.com/diazavilasebastian@gmail.com/iOSUI'
+  s.homepage         = 'https://github.com/diazavilasebastian/iOSUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sebastian Diaz Avila' => 'diazavilasebastian@gmail.com' }
-  s.source           = { :git => 'https://github.com/diazavilasebastian@gmail.com/iOSUI.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/diazavilasebastian/iOSUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'iOSUI/Classes/**/*'
+  
+  s.swift_version = ['4.2']
   
   # s.resource_bundles = {
   #   'iOSUI' => ['iOSUI/Assets/*.png']
