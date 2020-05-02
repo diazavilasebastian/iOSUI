@@ -62,6 +62,7 @@
 		5BDB0BB5F464064DF78D998FB490324F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148E9B9B88A6C299608B94017E20CF78 /* Foundation.framework */; };
 		602E3758C0EF64AF6B7FCEA05BF5B9B9 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C630D0F8C5AF00C6447C87248058193 /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		603F8EAC245DB4E800DF6C1E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F8EAB245DB4E800DF6C1E /* ScoreView.swift */; };
+		604B4F6F245DFE0F0065C872 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604B4F6E245DFE0F0065C872 /* MovieDetailView.swift */; };
 		60A20429245B7E7300345E81 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A20428245B7E7300345E81 /* ImageView.swift */; };
 		610D6EC1202EB3B04500DD44B66A9DB1 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 366B27CEC2EA862B81A96A30A4DA7382 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6140A77EACAD0FC8E751229EFF69A2ED /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820774B737DA3FA6778011C933885C /* World+DSL.swift */; };
@@ -297,6 +298,7 @@
 		5B820774B737DA3FA6778011C933885C /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
 		5E57AF404505D9FFBE4FF7BBC91EA3A1 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
 		603F8EAB245DB4E800DF6C1E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreView.swift; path = iOSUI/Classes/Views/ScoreView.swift; sourceTree = "<group>"; };
+		604B4F6E245DFE0F0065C872 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDetailView.swift; path = iOSUI/Classes/Views/MovieDetailView.swift; sourceTree = "<group>"; };
 		60A20428245B7E7300345E81 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageView.swift; path = iOSUI/Classes/Views/ImageView.swift; sourceTree = "<group>"; };
 		633C4B33FDB34321E1DA3FD7B5C15E58 /* iOSSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		66386A69AEB3065D55F69931F5BD9D7F /* Pods-iOSUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 			children = (
 				60A20428245B7E7300345E81 /* ImageView.swift */,
 				CA0A558D9E2516A9C7930FDC0B67F7D6 /* LabelStackView.swift */,
+				604B4F6E245DFE0F0065C872 /* MovieDetailView.swift */,
 				603F8EAB245DB4E800DF6C1E /* ScoreView.swift */,
 				8C7E84F2A533B495B2B1DEE5D0E09164 /* TwoLineView.swift */,
 				1D3DC1591449DFE4C11DFED7BB79229C /* Pod */,
@@ -1230,6 +1233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604B4F6F245DFE0F0065C872 /* MovieDetailView.swift in Sources */,
 				60A20429245B7E7300345E81 /* ImageView.swift in Sources */,
 				F5DFE0738C0B83BD52DAFDD33E312B7D /* iOSUI-dummy.m in Sources */,
 				02B6ED2056DC11826158E1E305D75DE2 /* LabelStackView.swift in Sources */,
