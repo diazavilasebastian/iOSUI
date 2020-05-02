@@ -25,7 +25,7 @@ class ImageViewTests: QuickSpec {
                         let image = UIImage(contentsOfFile: path){
                         view.updateImage(image: image)
                     }
-                    expect(view).to(recordSnapshot())
+                    expect(view).to(haveValidSnapshot())
                 }
             }
         }
