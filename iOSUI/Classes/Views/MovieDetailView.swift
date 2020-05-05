@@ -7,10 +7,14 @@
 
 import Foundation
 
-class MovieViewController: UIView {
+class MovieDetailView: UIView {
+
+    var title: String
+    var image: UIImage
 
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
+        label.text = self.title
         label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -19,7 +23,8 @@ class MovieViewController: UIView {
     }()
 
     lazy var movieImage: UIImageView = {
-        let imageView = UIImageView()
+        let image = self.image
+        let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleToFill
         imageView.layer.cornerRadius = 10.0
         imageView.clipsToBounds = true
@@ -29,16 +34,19 @@ class MovieViewController: UIView {
 
     lazy var popularityLabel: ScoreView = {
         let view = ScoreView(title: "Popularity", score: "", frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     lazy var overViewLabel: TwoLineView = {
         let view = TwoLineView(title: "General review", description: "")
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     lazy var tagLineLabel: TwoLineView = {
         let view = TwoLineView(title: "Tagline", description: "")
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
@@ -79,7 +87,11 @@ class MovieViewController: UIView {
         return view
     }()
 
-    override init(frame: CGRect) {
+    init(title: String,
+         image: UIImage,
+         frame: CGRect) {
+        self.title = title
+        self.image = image
         super.init(frame: frame)
         self.setupView()
     }
@@ -112,7 +124,6 @@ class MovieViewController: UIView {
         contentView.addSubview(genresViews)
         contentView.addSubview(companyViews)
     }
-
 
     /// Constrains
     func addConstrains() {
@@ -159,14 +170,13 @@ class MovieViewController: UIView {
         NSLayoutConstraint.activate([
             .init(item: tagLineLabel, attribute: .top, relatedBy: .equal, toItem: popularityLabel, attribute: .bottom, multiplier: 1.0, constant: 30.0),
             .init(item: tagLineLabel, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1.0, constant: 30.0),
-            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1.0, constant: 30.0)
+            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: tagLineLabel, attribute: .trailing, multiplier: 1.0, constant: 30.0)
         ])
 
         NSLayoutConstraint.activate([
             .init(item: overViewLabel, attribute: .top, relatedBy: .equal, toItem: tagLineLabel, attribute: .bottom, multiplier: 1.0, constant: 30.0),
             .init(item: overViewLabel, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1.0, constant: 30.0),
-            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: overViewLabel, attribute: .trailing, multiplier: 1.0, constant: 30.0),
-            .init(item: contentView, attribute: .top, relatedBy: .equal, toItem: overViewLabel, attribute: .bottom, multiplier: 1.0, constant: 10.0),
+            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: overViewLabel, attribute: .trailing, multiplier: 1.0, constant: 30.0)
         ])
 
         NSLayoutConstraint.activate([
