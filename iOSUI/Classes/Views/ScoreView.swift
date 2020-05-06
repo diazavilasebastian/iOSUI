@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ScoreView: UIView {
+public class ScoreView: UIView {
 
     var title: String
     var score: String
@@ -38,7 +38,7 @@ class ScoreView: UIView {
         return label
     }()
 
-    init(title: String,
+    public init(title: String,
          score: String,
          frame: CGRect) {
         self.title = title

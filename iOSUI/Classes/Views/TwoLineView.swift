@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TwoLineView: UIView {
+public class TwoLineView: UIView {
     
     var title: String
     var detail: String
@@ -32,7 +32,7 @@ class TwoLineView: UIView {
         return label
     }()
         
-    init(title: String,
+    public init(title: String,
          description: String,
          frame: CGRect = .zero) {
         self.title = title
