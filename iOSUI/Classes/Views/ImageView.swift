@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImageView: UIView {
+public class ImageView: UIView {
 
     private lazy var poster: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -27,7 +27,7 @@ class ImageView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func updateImage(image: UIImage) {
+    public func updateImage(image: UIImage) {
         self.poster.image = image
     }
 
