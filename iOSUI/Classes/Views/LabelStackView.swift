@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LabelStackView: UIView {
+public class LabelStackView: UIView {
     
     var title: String
     var axis: NSLayoutConstraint.Axis
@@ -47,7 +47,7 @@ class LabelStackView: UIView {
         return stackView
     }()
     
-    init(title: String,
+    public init(title: String,
          axis: NSLayoutConstraint.Axis,
          distribution: UIStackView.Distribution,
          spacing: CGFloat,

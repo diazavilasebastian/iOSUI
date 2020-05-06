@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieDetailView: UIView {
+public class MovieDetailView: UIView {
 
     var title: String
     var image: UIImage
@@ -87,7 +87,7 @@ class MovieDetailView: UIView {
         return view
     }()
 
-    init(title: String,
+    public init(title: String,
          image: UIImage,
          frame: CGRect) {
         self.title = title
