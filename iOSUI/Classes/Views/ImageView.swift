@@ -10,7 +10,7 @@ import UIKit
 
 public class ImageView: UIView {
 
-    private lazy var poster: UIImageView = {
+    public lazy var poster: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleToFill
