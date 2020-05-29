@@ -32,19 +32,19 @@ public class MovieDetailView: UIView {
         return imageView
     }()
 
-    lazy var popularityLabel: ScoreView = {
+    public lazy var popularityLabel: ScoreView = {
         let view = ScoreView(title: "Popularity", score: "", frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
-    lazy var overViewLabel: TwoLineView = {
+    public lazy var overViewLabel: TwoLineView = {
         let view = TwoLineView(title: "General review", description: "")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
-    lazy var tagLineLabel: TwoLineView = {
+    public lazy var tagLineLabel: TwoLineView = {
         let view = TwoLineView(title: "Tagline", description: "")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -57,7 +57,7 @@ public class MovieDetailView: UIView {
         return view
     }()
 
-    lazy var genresViews: LabelStackView = {
+    public lazy var genresViews: LabelStackView = {
         let view = LabelStackView(title: "Genres",
                                   axis: .horizontal,
                                   distribution: .fillProportionally,
@@ -66,7 +66,7 @@ public class MovieDetailView: UIView {
         return view
     }()
 
-    lazy var companyViews: LabelStackView = {
+    public lazy var companyViews: LabelStackView = {
         let view = LabelStackView(title: "Production companies",
                                   axis: .vertical,
                                   distribution: .fillProportionally,
