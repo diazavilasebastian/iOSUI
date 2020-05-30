@@ -33,19 +33,19 @@ public class MovieDetailView: UIView {
     }()
 
     public lazy var popularityLabel: ScoreView = {
-        let view = ScoreView(title: "Popularity", score: "", frame: .zero)
+        let view = ScoreView(title: "Popularity", frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     public lazy var overViewLabel: TwoLineView = {
-        let view = TwoLineView(title: "General review", description: "")
+        let view = TwoLineView(title: "General review")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     public lazy var tagLineLabel: TwoLineView = {
-        let view = TwoLineView(title: "Tagline", description: "")
+        let view = TwoLineView(title: "Tagline")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

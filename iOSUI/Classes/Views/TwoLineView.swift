@@ -38,7 +38,7 @@ public class TwoLineView: UIView {
     }()
         
     public init(title: String,
-         description: String,
+         description: String = "",
          frame: CGRect = .zero) {
         self.title = title
         self.detail = description
