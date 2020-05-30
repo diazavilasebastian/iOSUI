@@ -29,6 +29,13 @@ class ScoreViewTests: QuickSpec {
                     let view = ScoreView(title: "popularity of movie in the last year's (number o visit in the theater)", score: "34.5", frame: frame)
                     expect(view).to(haveValidSnapshot())
                 }
+
+                it("change score when update value") {
+                    let frame = CGRect(x: 0, y: 0, width: 300, height: 120)
+                    let view = ScoreView(title: "popularity of movie in the last year's (number o visit in the theater)", score: "34.5", frame: frame)
+                    view.score = "55.5"
+                    expect(view).to(haveValidSnapshot())
+                }
             }
         }
     }

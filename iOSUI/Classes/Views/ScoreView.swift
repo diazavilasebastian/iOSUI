@@ -10,8 +10,12 @@ import UIKit
 
 public class ScoreView: UIView {
 
-    var title: String
-    var score: String
+    public var title: String {
+        didSet { titleLabel.text = title }
+    }
+    public var score: String {
+        didSet { scoreLabel.text = score }
+    }
 
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
@@ -39,7 +43,7 @@ public class ScoreView: UIView {
     }()
 
     public init(title: String,
-         score: String,
+         score: String = "",
          frame: CGRect) {
         self.title = title
         self.score = score
