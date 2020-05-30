@@ -9,8 +9,8 @@ import Foundation
 
 public class MovieDetailView: UIView {
 
-    var title: String { didSet { titleLabel.text = title }}
-    var image: UIImage { didSet { movieImage.image = image }}
+    public var title: String { didSet { titleLabel.text = title }}
+    public var image: UIImage { didSet { movieImage.image = image }}
 
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
