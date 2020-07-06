@@ -62,7 +62,6 @@ public class TwoLineView: UIView {
         self.addSubview(detailLabel)
     }
     
-    /// Constrains
     func addConstrains() {
         
         NSLayoutConstraint.activate([
