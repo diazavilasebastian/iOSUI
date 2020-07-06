@@ -19,7 +19,7 @@ public class ImageView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupConstrains()
+        self.setupConstraints()
     }
 
     @available(*, unavailable)
@@ -31,7 +31,7 @@ public class ImageView: UIView {
         self.poster.image = image
     }
 
-    func setupConstrains() {
+    func setupConstraints() {
         self.addSubview(poster)
 
         NSLayoutConstraint.activate([
