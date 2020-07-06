@@ -72,7 +72,6 @@ public class ScoreView: UIView {
         self.addSubview(titleLabel)
     }
 
-
      /// Constrains
     func addConstraints() {
 
