@@ -10,13 +10,9 @@ import UIKit
 
 public class TwoLineView: UIView {
     
-    public var title: String {
-        didSet{ titleLabel.text = title }
-    }
+    public var title: String { didSet{ titleLabel.text = title } }
 
-    public var detail: String {
-        didSet { detailLabel.text = detail }
-    }
+    public var detail: String { didSet { detailLabel.text = detail } }
                 
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
