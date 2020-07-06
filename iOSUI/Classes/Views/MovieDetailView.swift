@@ -124,6 +124,14 @@ public class MovieDetailView: UIView {
         contentView.addSubview(genresViews)
         contentView.addSubview(companyViews)
     }
+    
+    public func starLoading() {
+        self.loadingView.startAnimating()
+    }
+    
+    public func stopLoading() {
+        self.loadingView.stopAnimating()
+    }
 
     /// Constrains
     func addConstrains() {
