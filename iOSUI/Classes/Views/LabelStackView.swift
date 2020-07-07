@@ -87,7 +87,6 @@ extension LabelStackView {
         self.addSubview(scrollView)
     }
     
-    /// Constrains
     func addConstrains() {
         
         NSLayoutConstraint.activate([
