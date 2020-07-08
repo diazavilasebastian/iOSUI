@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "Custom elements UI used in my project test where test architectures for movieDB project"
+  s.description      = "Custom elements UI used in my project test where test architectures for movieDB project architecture demo"
 
   s.homepage         = 'https://github.com/diazavilasebastian/iOSUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
