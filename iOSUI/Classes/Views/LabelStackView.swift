@@ -88,7 +88,7 @@ extension LabelStackView {
     }
     
     func addConstraints() {
-        
+       
         NSLayoutConstraint.activate([
            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
