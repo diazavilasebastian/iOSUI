@@ -74,7 +74,7 @@ extension LabelStackView {
     func setupView() {
         configureView()
         addHierarchy()
-        addConstrains()
+        addConstraints()
     }
     
     func configureView() {
@@ -87,8 +87,8 @@ extension LabelStackView {
         self.addSubview(scrollView)
     }
     
-    func addConstrains() {
-        
+    func addConstraints() {
+       
         NSLayoutConstraint.activate([
            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
