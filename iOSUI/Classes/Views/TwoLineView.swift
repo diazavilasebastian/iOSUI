@@ -50,7 +50,7 @@ public class TwoLineView: UIView {
     func setupView() {
         configureView()
         addHierarchy()
-        addConstrains()
+        addConstraints()
     }
     
     func configureView() {
@@ -62,7 +62,7 @@ public class TwoLineView: UIView {
         self.addSubview(detailLabel)
     }
     
-    func addConstrains() {
+    func addConstraints() {
         
         NSLayoutConstraint.activate([
             .init(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0.0),

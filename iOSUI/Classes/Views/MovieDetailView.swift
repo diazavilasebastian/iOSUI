@@ -104,7 +104,7 @@ public class MovieDetailView: UIView {
     func setupView() {
         configureView()
         addHierarchy()
-        addConstrains()
+        addConstraints()
     }
 
     func configureView() {
@@ -133,8 +133,7 @@ public class MovieDetailView: UIView {
         self.loadingView.stopAnimating()
     }
 
-    /// Constrains
-    func addConstrains() {
+    func addConstraints() {
 
         NSLayoutConstraint.activate([
             scrollView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
