@@ -16,11 +16,16 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios build_debug
+### ios iOSUI_build
 ```
-fastlane ios build_debug
+fastlane ios iOSUI_build
 ```
 build debug configuration
+### ios iOSUI_test
+```
+fastlane ios iOSUI_test
+```
+
 
 ----
 

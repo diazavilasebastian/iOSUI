@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='iOSUI_Tests.xctest' tests='9' failures='3'>
+  <testsuite name='iOSUI_Tests.ImageViewTests' tests='1' failures='0'>
+    <testcase classname='iOSUI_Tests.ImageViewTests' name='ImageView__when_initilized__have_the_spected_layout' time='0.165'/>
+  </testsuite>
+  <testsuite name='iOSUI_Tests.LabelStackViewTests' tests='2' failures='0'>
+    <testcase classname='iOSUI_Tests.LabelStackViewTests' name='LabelStackView__When_initializer__have_the_spected_vertical' time='0.041'/>
+    <testcase classname='iOSUI_Tests.LabelStackViewTests' name='LabelStackView__When_initializer__have_the_spected_horizontal' time='0.039'/>
+  </testsuite>
+  <testsuite name='iOSUI_Tests.MovieDetailViewsTests' tests='1' failures='1'>
+    <testcase classname='iOSUI_Tests.MovieDetailViewsTests' name='MovieDetailViews__when_initilized__have_the_spected_layout'>
+      <failure message=', got expected a matching snapshot in MovieDetailViews__when_initilized__have_the_spected_layout'>Example/Tests/MovieDetailViewTests.swift:29</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='iOSUI_Tests.ScoreViewTests' tests='3' failures='0'>
+    <testcase classname='iOSUI_Tests.ScoreViewTests' name='ScoreView__when_initilized__have_the_spected_layout' time='0.023'/>
+    <testcase classname='iOSUI_Tests.ScoreViewTests' name='ScoreView__when_initilized__have_the_spected_layout_with_large_title' time='0.039'/>
+    <testcase classname='iOSUI_Tests.ScoreViewTests' name='ScoreView__when_initilized__change_score_when_update_value' time='0.034'/>
+  </testsuite>
+  <testsuite name='iOSUI_Tests.TwoLineViewTests' tests='2' failures='2'>
+    <testcase classname='iOSUI_Tests.TwoLineViewTests' name='TwoLineView__when_initilized__have_the_spected_layout'>
+      <failure message='expected a matching snapshot in TwoLineView__when_initilized__have_the_spected_layout'>Example/Tests/TwoLineViewTests.swift:29</failure>
+    </testcase>
+    <testcase classname='iOSUI_Tests.TwoLineViewTests' name='TwoLineView__when_initilized__have_the_spected_layout_with_less_description'>
+      <failure message='expected a matching snapshot in TwoLineView__when_initilized__have_the_spected_layout_with_less_description'>Example/Tests/TwoLineViewTests.swift:39</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
