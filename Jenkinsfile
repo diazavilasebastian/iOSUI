@@ -5,6 +5,7 @@ pipeline {
         stage('Bundle install') {
             steps {
                 echo "********* BUNDLE INSTALL *********"
+                sh 'source ~/.bashrc'
                 sh 'bundle install'
             }
         }
