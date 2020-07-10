@@ -2,11 +2,19 @@ default_platform(:ios)
 
 platform :ios do
   desc "build debug configuration"
-  lane :build_debug do
+
+  lane :iOSUI_build do
 	build_app(scheme: "iOSUI-Example", 
 		workspace: "Example/iOSUI.xcworkspace", 
 		include_bitcode: true,
 		skip_codesigning: true,
 		skip_archive: true)
   end
+
+  lane :iOSUI_test do
+	run_tests(workspace: "Example/iOSUI.xcworkspace",
+            devices: ["iPhone 8"],
+            scheme: "iOSUI-Example")
+  end
+
 end

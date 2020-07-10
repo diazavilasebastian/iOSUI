@@ -10,8 +10,15 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "********* BUILD DEBUG CONFIG *********"
-                sh 'bundle exec fastlane build_debug'
+                echo "********* iOSUI DEBUG *********"
+                sh 'bundle exec fastlane iOSUI_build'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "********* iOSUI Test *********"
+                sh 'bundle exec fastlane iOSUI_test'
             }
         }
     }
