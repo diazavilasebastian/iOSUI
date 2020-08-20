@@ -43,8 +43,8 @@ public class ScoreView: UIView {
     }()
 
     public init(title: String,
-         score: String = "",
-         frame: CGRect) {
+                score: String = "",
+                frame: CGRect) {
         self.title = title
         self.score = score
         super.init(frame: frame)
@@ -89,4 +89,3 @@ public class ScoreView: UIView {
     }
 
 }
-

@@ -24,8 +24,9 @@ class TwoLineViewTests: QuickSpec {
                     let title = "Titulo de la vista"
                     let description = "Lorem ipsum dolor sit amet consectetur adipiscing elit taciti mauris sollicitudin metus nostra, venenatis magnis erat potenti curabitur fames sapien netus ornare aliquam parturient. Imperdiet morbi rutrum rhoncus per dictumst maecenas diam interdum neque commodo pellentesque, scelerisque in volutpat facilisi donec ligula "
                     let frame = CGRect(x: 0, y: 0, width: 300, height: 210)
-                    
                     sut = TwoLineView(title: title, description: description, frame: frame)
+                    sut.title = title
+                    sut.detail = description
                     expect(sut).to(haveValidSnapshot())
                     
                 }

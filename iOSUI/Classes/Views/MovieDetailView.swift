@@ -88,8 +88,8 @@ public class MovieDetailView: UIView {
     }()
 
     public init(title: String,
-         image: UIImage,
-         frame: CGRect) {
+                image: UIImage,
+                frame: CGRect) {
         self.title = title
         self.image = image
         super.init(frame: frame)
@@ -124,11 +124,11 @@ public class MovieDetailView: UIView {
         contentView.addSubview(genresViews)
         contentView.addSubview(companyViews)
     }
-    
+
     public func starLoading() {
         self.loadingView.startAnimating()
     }
-    
+
     public func stopLoading() {
         self.loadingView.stopAnimating()
     }
@@ -158,14 +158,15 @@ public class MovieDetailView: UIView {
 
         NSLayoutConstraint.activate([
             .init(item: loadingView, attribute: .centerY, relatedBy: .equal, toItem: titleLabel, attribute: .centerY, multiplier: 1.0, constant: 0.0),
-            .init(item: loadingView, attribute: .leading, relatedBy: .equal, toItem: titleLabel, attribute: .trailing, multiplier: 1.0, constant: 0.0),
+            .init(item: loadingView, attribute: .leading, relatedBy: .equal, toItem: titleLabel, attribute: .trailing, multiplier: 1.0, constant: 0.0)
         ])
 
+        let multiplier = (movieImage.frame.size.height / movieImage.frame.size.width)
         NSLayoutConstraint.activate([
             .init(item: movieImage, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1.0, constant: 30.0),
             .init(item: movieImage, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1.0, constant: 30.0),
             .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: movieImage, attribute: .trailing, multiplier: 1.0, constant: 30.0),
-            .init(item: movieImage, attribute: .height, relatedBy: .equal, toItem: movieImage, attribute: .width, multiplier: (movieImage.frame.size.height / movieImage.frame.size.width), constant: 0)
+            .init(item: movieImage, attribute: .height, relatedBy: .equal, toItem: movieImage, attribute: .width, multiplier: multiplier, constant: 0)
         ])
 
         NSLayoutConstraint.activate([
@@ -189,7 +190,7 @@ public class MovieDetailView: UIView {
         NSLayoutConstraint.activate([
             .init(item: genresViews, attribute: .top, relatedBy: .equal, toItem: overViewLabel, attribute: .bottom, multiplier: 1.0, constant: 30.0),
             .init(item: genresViews, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1.0, constant: 30.0),
-            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: genresViews, attribute: .trailing, multiplier: 1.0, constant: 30.0),
+            .init(item: contentView, attribute: .trailing, relatedBy: .equal, toItem: genresViews, attribute: .trailing, multiplier: 1.0, constant: 30.0)
         ])
 
         NSLayoutConstraint.activate([

@@ -1,0 +1,168 @@
+# expliction of rules inhttps://realm.github.io/SwiftLint/
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods
+- ../Example/Tests
+
+included: # paths to include during linting. `--path` is ignored if present.
+- ../Example/
+
+disabled_rules:
+  - trailing_whitespace
+  - trailing_comma
+
+opt_in_rules:
+  - anyobject_protocol
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - colon
+  - convenience_type
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_enum_arguments
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fatal_error_message
+  - file_length
+  - first_where
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_nsgeometry_functions
+  - modifier_order
+  - multiline_parameters
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prefixed_toplevel_constant
+  - private_action
+  - private_outlet
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - redundant_string_enum_value
+  - redundant_void_return
+  - return_arrow_whitespace
+  - sorted_first_last
+  - switch_case_on_newline
+  - trailing_closure
+  - type_name
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - unused_closure_parameter
+  - unused_optional_binding
+  - vertical_whitespace
+  - vertical_parameter_alignment_on_call
+  - void_return
+  - yoda_condition
+
+convenience_type:
+  severity: error
+force_cast:
+  severity: error
+force_try:
+  severity: error
+force_unwrapping:
+  severity: error
+implicitly_unwrapped_optional:
+  severity: error
+joined_default_parameter:
+  severity: error
+legacy_cggeometry_functions:
+  severity: error
+legacy_constant:
+  severity: error
+legacy_constructor:
+  severity: error
+legacy_nsgeometry_functions:
+  severity: error
+line_length:
+  severity: error
+modifier_order:
+  severity: error
+multiline_parameters:
+  severity: error
+operator_usage_whitespace:
+  severity: error
+overridden_super_call:
+  severity: error
+prefixed_toplevel_constant:
+  severity: error
+private_action:
+  severity: error
+private_outlet:
+  severity: error
+prohibited_super_call:
+  severity: error
+redundant_nil_coalescing:
+  severity: error
+redundant_string_enum_value:
+  severity: error
+redundant_void_return:
+  severity: error
+return_arrow_whitespace:
+  severity: error
+sorted_first_last:
+  severity: error
+statement_position:
+  severity: error
+switch_case_on_newline:
+  severity: error
+trailing_closure:
+  severity: error
+trailing_newline:
+  severity: error
+todo:
+  severity: warning
+type_name:
+  severity: error
+unavailable_function:
+  severity: error
+unneeded_parentheses_in_closure_argument:
+  severity: error
+unused_closure_parameter:
+  severity: error
+unused_optional_binding:
+  severity: error
+vertical_whitespace:
+  severity: error
+vertical_parameter_alignment_on_call:
+  severity: error
+void_return:
+  severity: error
+yoda_condition:
+  severity: error
+
+colon:
+  apply_to_dictionaries: false
+
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+cyclomatic_complexity:
+  warning: 11
+  error: 12
+
+function_body_length:
+  warning: 80
+  error: 90
+
+line_length:
+  warning: 180
+  error: 181
+
+nesting:
+  type_level: 2
+
+identifier_name:
+  error: 3
+  excluded:
+    - up
+    - id
+reporter: "xcode"

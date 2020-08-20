@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Device {
+enum Device {
 
     /*
      UIKIT POINTS
