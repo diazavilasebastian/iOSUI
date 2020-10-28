@@ -1,4 +1,5 @@
-name: Swift
+uses: sersoft-gmbh/xcodebuild-action@v1.2
+name: Xcodebuild Action 
 
 on:
   push:
@@ -17,3 +18,8 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
+with:
+  project: MyApp.xcodeproj
+  scheme: MyApp
+  destination: platform=macOS
+  action: test
