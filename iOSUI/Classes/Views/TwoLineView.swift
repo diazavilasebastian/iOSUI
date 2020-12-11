@@ -16,6 +16,7 @@ public class TwoLineView: UIView {
 
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
+        label.text = self.title
         label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
@@ -25,6 +26,7 @@ public class TwoLineView: UIView {
 
     lazy var detailLabel: UILabel = {
         let label = UILabel(frame: .zero)
+        label.text = self.detail
         label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
